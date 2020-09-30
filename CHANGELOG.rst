@@ -116,6 +116,8 @@ Documentation
   (:pr:`432`) `Riley X. Brady`_.
 - Add all metrics to main API in addition to metrics page.
   (:pr:`438`) `Riley X. Brady`_.
+- `Example <examples/decadal/significance.html#Sign-test>`__ using
+  ``xskillscore.sign_test`` comparing two forecasts. (:pr:`474`) `Aaron Spring`_.
 
 Internals/Minor Fixes
 ---------------------

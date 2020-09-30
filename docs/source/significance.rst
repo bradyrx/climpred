@@ -66,6 +66,13 @@ rate (FDR) in geospatial data from the above obtained p-values [Wilks2016]_. See
 `FDR example <examples/decadal/significance.html#Field-significance>`__.
 
 
+Sign test
+#########
+
+[DelSole2016]_ describes how the statistics of a random walk or flipping a coin can be
+used to determine whether one forecast is better than another forecast. See the
+`sign test example <examples/decadal/significance.html#Sign-test>`__.
+
 References
 ##########
 
@@ -79,3 +86,6 @@ References
     Points’: How Research Results Are Routinely Overstated and Overinterpreted, and
     What to Do about It.” Bulletin of the American Meteorological Society 97, no. 12
     (March 9, 2016): 2263–73. https://doi.org/10/f9mvth.
+
+.. [DelSole2016] DelSole, T., & Tippett, M. K. (2016). Forecast Comparison Based on
+    Random Walks. Monthly Weather Review, 144(2), 615–626. doi: 10/f782pf
