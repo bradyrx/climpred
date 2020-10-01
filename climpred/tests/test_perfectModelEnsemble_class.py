@@ -189,6 +189,15 @@ def test_HindcastEnsemble_as_PerfectModelEnsemble(hindcast_recon_1d_mm):
     assert not hindcast.verify(
         metric="acc", comparison="e2o", dim="init", alignment=alignment
     )[v]
+
+    assert (
+        not hindcast.verify(
+            metric="acc", comparison="e2o", dim="init", alignment=alignment
+        )[v]
+        .isnull()
+        .any()
+    )
+    
     # try PerfectModelEnsemble predictability
     init = hindcast.get_initialized()
     print(init.lead)
@@ -218,6 +227,7 @@ def test_HindcastEnsemble_as_PerfectModelEnsemble(hindcast_recon_1d_mm):
         .isnull()
         .any()
     )
+
     pm.bootstrap(iterations=2, metric="acc", comparison="m2e", dim=["member", "init"])
 
 
